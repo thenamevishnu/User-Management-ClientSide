@@ -1,0 +1,43 @@
+.manage-container{
+    margin-top: 30px;
+}
+
+.search{
+    position: relative;
+    left: 99.7%;
+    transform: translate(-100%,0);
+    margin-top: 15px;
+    height: 30px;
+    width: 20%;
+    box-shadow: 1px 1px 1px #888 , -1px -1px 1px #fff;
+    background-color: #bdbdbd;
+    border-radius: 10px;
+    border: 0;
+    padding: 6px;
+    padding-left: 12px;
+}
+
+.search:focus{
+    outline: 0;
+}
+
+.table .row{
+    width: auto;
+    height: auto;
+}
+
+.table .row th , .table .row td{
+    color: rgb(70, 70, 70);
+    font-weight: bolder;
+    text-align: center;
+    width: 100vw;
+    padding: 20px;
+    border: 1px solid rgb(124, 124, 124);
+    box-shadow: 1px 1px 1px #888 , -1px -1px 1px #fff;
+    border-radius: 10px;
+}
+
+.admin-profile-pic{
+    width: 50px;
+    height: 50px;
+}

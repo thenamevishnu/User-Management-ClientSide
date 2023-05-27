@@ -1,0 +1,14 @@
+.profile-button{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: rgb(198, 198, 198);
+    padding: 17px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 1px #888 , -1px -1px 1px #fff;
+    text-decoration: none;
+    border: none;
+    color: #505050;
+    font-weight: bolder;
+}
