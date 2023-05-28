@@ -8,6 +8,7 @@ import ProfilePage from './Pages/Users/ProfilePage'
 import AdminLogin from './Pages/Admins/AdminLogin'
 import Manage from './Components/Admins/Manage/Manage'
 import AdminEdit from './Pages/Admins/AdminEdit'
+import AdminAddUser from './Pages/Admins/AdminAddUser'
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
                  <Route Component={AdminLogin} path='/admin/login' />
                  <Route Component={Manage} path='/admin' />
                  <Route Component={AdminEdit} path='/admin/edit_user' />
+                 <Route Component={AdminAddUser} path='/admin/add_user' />
             </Routes>
       </Router>
     </div>

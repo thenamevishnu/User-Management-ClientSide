@@ -1,16 +1,16 @@
 
-.container{
+.signup-container{
     background: rgb(218, 218, 218);
 }
 
-.container .header{
+.signup-container .header{
     text-align: center;
     margin-top: 30px;
     font-size: 35px;
     color: rgb(154, 153, 153);
 }
 
-.container .form-container{
+.signup-container .form-container{
     width: 40vw;
     height: 60vh;
     position: absolute;
@@ -22,14 +22,14 @@
     border-radius: 12px;
 }
 
-.container .form-container .form{
+.signup-container .form-container .form{
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
 }
 
-.container .form-container .form input{
+.signup-container .form-container .form input{
     width: 100%;
     height: 35px;
     margin-bottom: 20px;
@@ -40,11 +40,11 @@
     background-color: #c1c1c1;
 }
 
-.container .form-container .form input:focus{
+.signup-container .form-container .form input:focus{
     outline: 0;
 }
 
-.button{
+.signup-container .button{
     width: 40%;
     height: 35px;
     border: none;
@@ -56,14 +56,15 @@
     color: #fff;
     font-weight: bold;
     box-shadow: 2px 2px 2px #777 , -2px -2px 2px #ddd;
+    cursor: pointer;
 }
 
-.form-container .Login{
+.signup-container .form-container .Login{
     text-align: center;
     margin-top: 10px;
 }
 
-.form-container .Login .text-decoration{
+.signup-container .form-container .Login .text-decoration{
     text-decoration: none;
     color: rgb(71, 71, 71);
     margin-left: 12px;

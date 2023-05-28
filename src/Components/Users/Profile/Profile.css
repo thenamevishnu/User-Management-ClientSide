@@ -1,11 +1,8 @@
-.container .profile-container{
+.profile-container{
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-}
-
-.container .profile-container{
     width: 15vw;
     padding: 50px;
     background-color: rgb(207, 207, 207);
@@ -13,7 +10,7 @@
     border-radius: 10px;   
 }
 
-.container .profile-container .profile-info{
+.profile-container .profile-info{
     text-align: center;
     margin-bottom: 10px;
     color: #646464;
@@ -27,11 +24,11 @@
     left: 15%;
 }
 
-input[type='file']{
+.profile-container input[type='file']{
     display: none;
 }
 
-.custom-file-button {
+.profile-container .custom-file-button {
     display: inline-block;
     padding: 10px 20px;
     background-color: #c6c6c6;
@@ -43,6 +40,18 @@ input[type='file']{
     left: 38%;
 }
 
-.custom-file-button:active{
+.profile-container .custom-file-button:active{
     box-shadow: none;
+}
+
+.profile-container .update-button{
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #c6c6c6;
+    color: white;
+    cursor: pointer;
+    box-shadow: 1px 1px 1px #888 , -1px -1px 1px #fff;
+    border-radius: 30px;
+    position: relative;
+    left: 30%;
 }

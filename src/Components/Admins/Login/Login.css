@@ -1,16 +1,16 @@
 
-.container{
+.admin-login-container{
     background: rgb(218, 218, 218);
 }
 
-.container .header{
+.admin-login-container .header{
     text-align: center;
     margin-top: 30px;
     font-size: 35px;
     color: rgb(154, 153, 153);
 }
 
-.container .form-container{
+.admin-login-container .form-container{
     width: 40vw;
     height: 60vh;
     position: absolute;
@@ -22,14 +22,14 @@
     border-radius: 12px;
 }
 
-.container .form-container .form{
+.admin-login-container .form-container .form{
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
 }
 
-.container .form-container .form input{
+.admin-login-container .form-container .form input{
     width: 100%;
     height: 35px;
     margin-bottom: 20px;
@@ -40,11 +40,11 @@
     background-color: #c1c1c1;
 }
 
-.container .form-container .form input:focus{
+.admin-login-container .form-container .form input:focus{
     outline: 0;
 }
 
-.button{
+.admin-login-container .button{
     width: 40%;
     height: 35px;
     border: none;

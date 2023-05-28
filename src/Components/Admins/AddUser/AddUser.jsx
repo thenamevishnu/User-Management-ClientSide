@@ -1,8 +1,9 @@
 import React from 'react'
-import { useNavigate } from 'react-router-dom'
-import './Edit.css'
+import {useNavigate} from "react-router-dom"
+import './AddUser.css'
 
-function Edit() {
+function AddUser() {
+
     const navigate = useNavigate()
 
     const handleSubmit = (e) => {
@@ -11,16 +12,17 @@ function Edit() {
     }
 
     return (
-        <div className='admin-edit-container'>
+        <div className='add-user-container'>
             <div className='form-container'>
-                <h2 className='header'>Edit User</h2>
+                <h2 className='header'>Admin Add User</h2>
                 <form onSubmit={handleSubmit} className='form'>
                     <input type='text' name='Username' id='Username' placeholder='Username'/>
-                    <button className='button' >Edit</button>
+                    <input type='password' name='Password' id='Password' placeholder='Password'/>
+                    <button className='button' >Add User</button>
                 </form>
             </div>
         </div>
     )
 }
 
-export default Edit
+export default AddUser

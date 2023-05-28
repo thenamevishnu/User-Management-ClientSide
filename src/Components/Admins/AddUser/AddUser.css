@@ -1,16 +1,16 @@
 
-.login-container{
+.add-user-container{
     background: rgb(218, 218, 218);
 }
 
-.login-container .header{
+.add-user-container .header{
     text-align: center;
     margin-top: 30px;
     font-size: 35px;
     color: rgb(154, 153, 153);
 }
 
-.login-container .form-container{
+.add-user-container .form-container{
     width: 40vw;
     height: 60vh;
     position: absolute;
@@ -20,16 +20,17 @@
     background: rgb(202, 202, 202);
     box-shadow: 2px 2px 2px #888 , -2px -2px 2px #ddd; 
     border-radius: 12px;
+    padding-top: 20px;
 }
 
-.login-container .form-container .form{
+.add-user-container .form-container .form{
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
 }
 
-.login-container .form-container .form input{
+.add-user-container .form-container .form input{
     width: 100%;
     height: 35px;
     margin-bottom: 20px;
@@ -40,11 +41,11 @@
     background-color: #c1c1c1;
 }
 
-.login-container .form-container .form input:focus{
+.add-user-container .form-container .form input:focus{
     outline: 0;
 }
 
-.login-container .button{
+.add-user-container .button{
     width: 40%;
     height: 35px;
     border: none;
@@ -56,16 +57,4 @@
     color: #fff;
     font-weight: bold;
     box-shadow: 2px 2px 2px #777 , -2px -2px 2px #ddd;
-    cursor: pointer;
-}
-
-.login-container .form-container .signup{
-    text-align: center;
-    margin-top: 10px;
-}
-
-.login-container .form-container .signup .text-decoration{
-    text-decoration: none;
-    color: rgb(71, 71, 71);
-    margin-left: 12px;
 }
