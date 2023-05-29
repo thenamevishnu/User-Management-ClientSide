@@ -7,6 +7,8 @@ function Header() {
 
     const { Username } = useSelector(state => state.user)
 
+    console.log(Username);
+
     const navigate = useNavigate()
 
     useEffect(()=>{

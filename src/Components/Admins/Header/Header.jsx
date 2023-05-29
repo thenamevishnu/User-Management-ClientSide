@@ -13,7 +13,7 @@ function Header() {
         }
     })
 
-    const { Username } = useSelector(state => state.admin)
+    const { adminUsername } = useSelector(state => state.admin)
 
     const logout = () => {
         localStorage.removeItem("admin")
@@ -26,7 +26,7 @@ function Header() {
                     ADMIN PANEL
             </div>
             <div className='user-info'>
-                { Username && <span className='profile-name'>Admin : {Username} <i className='fa fa-sign-out' onClick={logout} title='logout'></i></span> }
+                { adminUsername && <span className='profile-name'>Admin : {adminUsername} <i className='fa fa-sign-out' onClick={logout} title='logout'></i></span> }
             </div>
             </div>
     )

@@ -11,7 +11,7 @@ function Profile() {
     const dispatch = useDispatch()
 
     const setDp = async () => {
-       
+        
         const formData = new FormData()
 
         formData.append("image",image)
@@ -45,7 +45,7 @@ function Profile() {
             <div className='upload-image'>
                 <input accept=".jpg, .jpeg, .png, .gif, .pdf" type='file' name='dp' id='dp' onChange={(e)=>{setImage(e.target.files[0])}} />
                 {!image && <label htmlFor="dp" className='custom-file-button' title='Upload Pic'><i className='fa fa-upload'></i></label>}
-                { image && <button className='update-button' onClick={setDp} title='Update Pic'><i className='fa fa-refresh'></i> Update</button>}
+                { image && <button className='update-button' onClick={()=>setDp()} title='Update Pic'><i className='fa fa-refresh'></i> Update</button>}
             </div>
         </div>
     )

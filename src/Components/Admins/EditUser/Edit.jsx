@@ -9,9 +9,9 @@ import { useSelector } from 'react-redux';
 function Edit() {
     const navigate = useNavigate()
 
-    const {Username , Id} = useSelector(state => state.edit)
+    const {editUsername , editId} = useSelector(state => state.edit)
 
-    const [user,setUsername] = useState(Username) 
+    const [user,setUsername] = useState(editUsername) 
 
     const toastMessage = (param)=>{
         return {
@@ -32,7 +32,7 @@ function Edit() {
         if(!username_reg.test(user.Username)){
             toast.error("Invalid Username",toastMessage(3000))
         }else{
-            const { data } = await axios.post(process.env.react_app_server_url+"/admin/edit_user",{user , Id},{withCredentials:true})
+            const { data } = await axios.post(process.env.react_app_server_url+"/admin/edit_user",{user , editId},{withCredentials:true})
             if(data.exist){
                 toast.error(data.response , toastMessage(3000))
             }else{

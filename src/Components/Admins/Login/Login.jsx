@@ -52,7 +52,7 @@ function Login() {
                 toast.success("Successfully LoggedIn!",toastMessage(1000))
                 setTimeout(() => {
                     localStorage.setItem("admin",JSON.stringify(data))
-                    dispatch(changeUser({Username:data.getAdmin.Username,Id:data.getAdmin._id}))
+                    dispatch(changeUser({adminUsername:data.getAdmin.Username,adminId:data.getAdmin._id}))
                     navigate("/admin")
                 }, 2000);
             }

@@ -112,7 +112,7 @@ function Manage() {
                                         <td><img src={obj.Dp ? `../../../Images/${obj.Dp}` : "../../../Images/avatar.png" } alt='profile pic' className='admin-profile-pic'/></td>
                                         <td>{obj.Username}</td>
                                         <td><i className='fa fa-edit' style={{cursor:'pointer',fontSize:'25px'}} title='Edit User' onClick={() => {
-                                            dispatch(changeEditUser({Id:obj._id,Username:obj.Username})); navigate('/admin/edit_user');
+                                            dispatch(changeEditUser({editId:obj._id,editUsername:obj.Username})); navigate('/admin/edit_user');
                                         }}></i></td>
                                         <td><i className='fa fa-trash' style={{cursor:'pointer',fontSize:'25px'}} title='Delete User' onClick={() => DeleteUser({Id:obj._id,Username:obj.Username})}></i></td>
                                     </tr>

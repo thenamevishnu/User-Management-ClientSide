@@ -1,17 +1,15 @@
 import { createSlice } from "@reduxjs/toolkit";
 
-const INITIAL_STATE={
-    Id:"",
-    Username:"",
-}
-
 export const adminEdit=createSlice({
     name:'edit',
-    initialState:INITIAL_STATE,
+    initialState:{
+        editId:"",
+        editUsername:"",
+    },
     reducers:{
         changeEditUser:(state,action)=>{
-            state.Id = action.payload.Id
-            state.Username=action.payload.Username
+            state.editId = action.payload.editId
+            state.editUsername=action.payload.editUsername
         }
     }
 })
