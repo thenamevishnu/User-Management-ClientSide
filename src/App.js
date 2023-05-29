@@ -6,7 +6,7 @@ import HomePage from './Pages/Users/HomePage'
 import SignupPage from './Pages/Users/SignupPage'
 import ProfilePage from './Pages/Users/ProfilePage'
 import AdminLogin from './Pages/Admins/AdminLogin'
-import Manage from './Components/Admins/Manage/Manage'
+import AdminManage from "./Pages/Admins/AdminManage"
 import AdminEdit from './Pages/Admins/AdminEdit'
 import AdminAddUser from './Pages/Admins/AdminAddUser'
 
@@ -24,7 +24,7 @@ function App() {
                 {/* Admin Routers */}
 
                  <Route Component={AdminLogin} path='/admin/login' />
-                 <Route Component={Manage} path='/admin' />
+                 <Route Component={AdminManage} path='/admin' />
                  <Route Component={AdminEdit} path='/admin/edit_user' />
                  <Route Component={AdminAddUser} path='/admin/add_user' />
             </Routes>

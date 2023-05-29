@@ -40,15 +40,15 @@ function Signup() {
         const username_reg = /^[A-Za-z_][a-zA-Z0-9_.]{3,15}$/gm
         const password_reg = /^(?=.*?[a-z])(?=.*?[A-Z])(?=.*?[0-9])(?=.*?[!@#$%^&*().\\?]).{8,16}$/gm
         if(!username_reg.test(user.Username)){
-            toast.error("Invalid username",toastMessage(3000));
+            toast.error("Invalid username",toastMessage(1000));
         }else if(!password_reg.test(user.Password)){
-            toast.error("Invalid Password",toastMessage(3000));
+            toast.error("Invalid Password",toastMessage(1000));
         }else{
             const { data } = await axios.post(process.env.react_app_server_url+"/signup",{...user},{withCredentials:true})
             if(data.exist){
                 toast.error("Username already exist",toastMessage(3000))
             }else{
-                toast.success("Success",toastMessage(2000))
+                toast.success("New Account Created!",toastMessage(1000))
                 setTimeout(() => {
                     navigate("/login")
                 }, 2000);

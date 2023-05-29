@@ -5,16 +5,16 @@ const INITIAL_STATE={
     Username:"",
 }
 
-export const adminSlice=createSlice({
-    name:'admin',
+export const adminEdit=createSlice({
+    name:'edit',
     initialState:INITIAL_STATE,
     reducers:{
-        changeUser:(state,action)=>{
+        changeEditUser:(state,action)=>{
             state.Id = action.payload.Id
             state.Username=action.payload.Username
         }
     }
 })
 
-export const {changeUser} =adminSlice.actions
-export default adminSlice.reducer
+export const {changeEditUser} = adminEdit.actions
+export default adminEdit.reducer

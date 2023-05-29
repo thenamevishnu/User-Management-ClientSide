@@ -57,4 +57,5 @@
     color: #fff;
     font-weight: bold;
     box-shadow: 2px 2px 2px #777 , -2px -2px 2px #ddd;
+    cursor: pointer;
 }

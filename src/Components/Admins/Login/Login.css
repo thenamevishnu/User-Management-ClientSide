@@ -55,5 +55,6 @@
     transform: translate(-55%,0);
     color: #fff;
     font-weight: bold;
+    cursor: pointer;
     box-shadow: 2px 2px 2px #777 , -2px -2px 2px #ddd;
 }

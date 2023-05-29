@@ -27,7 +27,7 @@ function Header() {
                 USER MANAGEMENT
         </div>
         <div className='user-info'>
-            { Username && <span className='profile-name'>{Username} <i className='fa fa-sign-out' onClick={logout}></i></span> }
+            { Username && <span className='profile-name'>User : {Username} <i className='fa fa-sign-out' onClick={logout} title='logout'></i></span> }
         </div>
         </div>
     )
