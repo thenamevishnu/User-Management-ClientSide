@@ -10,8 +10,8 @@ function Profile() {
     const { Username, Dp, Id } = useSelector(state => state.user)
     const dispatch = useDispatch()
 
-    const setDp = async () => {
-        
+    const setDp = async (image) => {
+
         const formData = new FormData()
 
         formData.append("image",image)
@@ -28,10 +28,13 @@ function Profile() {
         try {
             const { data } = await axios.post(process.env.react_app_server_url+"/profile", formData, config)
             dispatch(updateUser({ Dp: data.Dp, Username, Id }))
-            setImage(null)
+            if(data.status){
+                setImage(null)
+            }
         } catch (error) {
             console.log(error)
         }
+        
     }
 
     return (
@@ -43,9 +46,10 @@ function Profile() {
                 <span>{Username ? Username : null}</span>
             </div>
             <div className='upload-image'>
-                <input accept=".jpg, .jpeg, .png, .gif, .pdf" type='file' name='dp' id='dp' onChange={(e)=>{setImage(e.target.files[0])}} />
-                {!image && <label htmlFor="dp" className='custom-file-button' title='Upload Pic'><i className='fa fa-upload'></i></label>}
-                { image && <button className='update-button' onClick={()=>setDp()} title='Update Pic'><i className='fa fa-refresh'></i> Update</button>}
+                    <input accept=".jpg, .jpeg, .png, .gif, .pdf" type='file' name='dp' id='dp' onChange={(e)=>{setImage(e.target.files[0]); setDp(e.target.files[0])}} />
+                    <label htmlFor="dp" className='custom-file-button' title='Upload Pic'><i className='fa fa-upload'></i></label>
+                    {/* {image && <button className='update-button' onClick={setDp} title='Update Pic'><i className='fa fa-refresh'></i> Update</button>} */}
+              
             </div>
         </div>
     )
